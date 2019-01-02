@@ -1,0 +1,19 @@
+1:
+ros_arduino_python/config/arduino.yaml  
+	--base_frame: 
+
+2:
+rbx1_nav/config/dwa/global_costmap_params.yaml
+rbx1_nav/config/dwa/local_costmap_params.yaml
+	-- robot_base_frame:
+
+rbx1_nav/launch/tb_move_base_blank_map.launch
+	-- odom map static transform 
+
+rbx1_nav/launch/tb_amcl.launch
+	-- remap scan_topic 
+
+
+3:
+launch/rplidar.launch
+	-- frame_id change
